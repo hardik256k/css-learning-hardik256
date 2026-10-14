@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            background-color: lightgray;
+            margin: 60;
+            padding: ;
+        }
         /* element selector */
         p{
 color: darkturquoise;
@@ -27,8 +32,13 @@ color: coral;
   border: 2px solid black; */
         }
         /* class selector */
-        .note{
+        p.note{
 color: fuchsia;
+        }
+
+
+        div+p{
+            color: blueviolet;
         }
     </style>
 </head>
@@ -36,6 +46,20 @@ color: fuchsia;
     <h1 class="box">This is my heading</h1>
     <p id="intro" class="note" >This is my para</p>
     <p style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur natus impedit asperiores voluptate recusandae quos modi, saepe facilis ullam consequuntur est ab fugit ea ipsa facere ex distinctio alias! Magni praesentium aspernatur optio reiciendis numquam molestias, placeat vero sit ullam, distinctio aliquam quis fugit doloribus amet perspiciatis cupiditate minus.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>
+        <p>Child p</p>
+        <div>
+            <p>Child Div 2 </p>
+            <strong><p>strong p </p></strong>
+        </div>
+        <span><p>span p</p></span>
+    </div>
+    <p>just another paragraph
+
     </p>
     
 </body>
